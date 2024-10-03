@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashtanga Yoga Serie 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="start-screen">
+        <img src="images/yoga_logo.gif" alt="Yoga Logo" class="logo-image"> <!-- Imagen agregada -->
+        <h1>Ashtanga Yoga</h1>
+        <button id="play-order">Jugar en orden</button>
+        <button id="play-random">Jugar aleatorio</button>
+    </div>
+    
+    <div id="game-container" class="container" style="display: none;">
+        <h1>Ashtanga Yoga Serie 1</h1> 
+        <div id="name" class="yoga-name"></div>
+        <div class="images-container">
+            <img id="img1" src="" alt="">
+            <img id="img2" src="" alt="">
+            <img id="img3" src="" alt="">
+        </div>
+        <div id="score">Puntuación: 0</div>
+        <div id="incorrectCount">Posturas incorrectas: 0</div>
+        <button id="restart">Reiniciar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
