@@ -5,8 +5,8 @@
 
 .logo-image {
     display: block;
-    margin: 20px auto; /* Centra la imagen */
-    width: 150px; /* Ajusta el tamaño de la imagen */
+    margin: 20px auto;
+    width: 150px;
     height: auto;
 }
 
@@ -28,13 +28,15 @@
 
 h1 {
     font-family: Arial, sans-serif;
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
 }
 
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -43,11 +45,8 @@ body {
 }
 
 .container {
+    width: 80%;
     text-align: center;
-}
-h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
 }
 
 .yoga-name {
@@ -57,13 +56,17 @@ h1 {
 
 .images-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 20px;
+    flex-wrap: nowrap; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .images-container img {
-    width: 200px;
-    height: 200px;
+    max-width: 30%; 
+    height: auto;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -71,6 +74,17 @@ h1 {
 
 .images-container img:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .images-container {
+        gap: 10px;
+    }
+    
+    .images-container img {
+        max-width: 100px;
+        height: 100px;
+    }
 }
 
 .correct {
